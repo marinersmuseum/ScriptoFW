@@ -4,13 +4,11 @@ jQuery(document).ready(function() {
       event.preventDefault();
       var clicks = jQuery(this).data('clicks');
       if (!clicks) {
-          // change viewer width
-          jQuery('#scripto-openlayers').animate({ width: "45%" }, 50, "linear", function() { /* Animation complete. */ });
-          jQuery(window).trigger("resize");
+          // change viewer width using edit class
+          jQuery('#scripto-openlayers').addClass('edit');
       } else {
-          // change viewer width
-          jQuery('#scripto-openlayers').animate({ width: "100%" }, 50, "linear", function() { /* Animation complete. */ });
-          jQuery(window).trigger("resize");
+          // change viewer width edit class
+          jQuery('#scripto-openlayers').removeClass('edit');
       }
   });
 });

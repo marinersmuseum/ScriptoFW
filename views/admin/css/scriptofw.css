@@ -10,9 +10,9 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   /* Scripto CSS */
   #scripto-transcription-edit {
     position: absolute;
-    top: 272px;
+    top: 274px;
     right: 0px;
-    width: 710px;
+    width: 530px;
     padding-right: 15px;
   }
   #scripto-transcription-page-html {
@@ -20,16 +20,19 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
     overflow: scroll;
     padding: 0 1em;
   }
-  #scripto-openlayers.half {
-    height: 400px;
-    border: 1px grey solid;
-    margin-bottom: 12px;
-    float: left;
-    width: 48%;
-  }
   #scripto-transcribe.scripto p {
     position: relative;
     clear: left;
+  }
+  #scripto-transcription-edit textarea#scripto-transcription-page-wikitext { height: 402px; }
+
+  /* ScriptoFW CSS */
+  .edit { 
+    width: 45%;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
   }
 }
 
@@ -40,4 +43,20 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   .container-twelve .ten.columns { width: 1420px; }
 
   /* Scripto CSS */
+  #scripto-transcription-edit {
+    position: absolute;
+    top: 274px;
+    right: 0px;
+    width: 760px;
+    padding-right: 15px;
+  }
+
+  /* ScriptoFW CSS */
+  .edit { 
+    width: 45%;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+  }
 }
