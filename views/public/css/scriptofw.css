@@ -8,6 +8,13 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   .container-twelve .ten.columns { width: 999px; }
 
   /* Scripto CSS */
+  #scripto-openlayers {
+    width: 100%;
+    -webkit-transition: width 200ms ease;
+    -moz-transition: width 200ms ease;
+    -o-transition: width 200ms ease;
+    transition: width 200ms ease;
+  }
   #scripto-transcription-edit {
     position: relative;
     bottom: 466px;
@@ -19,6 +26,7 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
     height: 385px;
     overflow: scroll;
     padding: 0 1em;
+    margin-top: 10px;
   }
   #scripto-transcribe.scripto p {
     position: relative;
@@ -30,13 +38,7 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   }
 
   /* ScriptoFW CSS */
-  .edit { 
-    width: 50%;
-    -webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
-    -o-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
-  }
+  .edit { width: 50% !important; }
 }
 
 /* Large screens (w/ content @ 1824px, not 1600px) */
@@ -57,9 +59,5 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   /* ScriptoFW CSS */
   .edit { 
     width: 50%;
-    -webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
-    -o-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
   }
 }
