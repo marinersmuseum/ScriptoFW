@@ -5,10 +5,10 @@ jQuery(document).ready(function() {
       var clicks = jQuery(this).data('clicks');
       if (!clicks) {
           // change viewer width using edit class
-          jQuery('#scripto-openlayers').addClass('edit');
+          jQuery('#scripto-openlayers').addClass('edit-mode-width');
       } else {
           // change viewer width edit class
-          jQuery('#scripto-openlayers').removeClass('edit');
+          jQuery('#scripto-openlayers').removeClass('edit-mode-width');
       }
   });
 });

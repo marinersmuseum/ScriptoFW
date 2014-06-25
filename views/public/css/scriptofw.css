@@ -1,7 +1,7 @@
 /* Omeka CSS */
 header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
 
-/* Desktops and laptops (w/ content @ 1180px, not 980px) */
+/* Desktops and laptops */
 @media only screen and (min-width : 1224px) {
   /* Skeleton CSS */
   .container { width: 1180px; }
@@ -18,7 +18,7 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   #scripto-transcription-edit {
     position: relative;
     bottom: 466px;
-    left: 715px;
+    left: 51%;
     width: 49%;
     margin-bottom: -475px;
   }
@@ -38,26 +38,12 @@ header { z-index: 1010; } /* core header is 999; OpenLayers controls are 1004
   }
 
   /* ScriptoFW CSS */
-  .edit { width: 50% !important; }
+  .edit-mode-width { width: 50% !important; }
 }
 
-/* Large screens (w/ content @ 1824px, not 1600px) */
+/* Large screens */
 @media only screen and (min-width : 1824px) {
   /* Skeleton CSS */
   .container { width: 1600px; }
   .container-twelve .ten.columns { width: 1420px; }
-
-  /* Scripto CSS */
-  #scripto-transcription-edit {
-    position: relative;
-    bottom: 466px;
-    left: 785px;
-    width: 49%;
-    margin-bottom: -475px;
-  }
-
-  /* ScriptoFW CSS */
-  .edit { 
-    width: 50%;
-  }
 }
